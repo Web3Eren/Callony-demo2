@@ -1287,5 +1287,6 @@ export const HOTELS = [
       family: `👨‍👩‍👧 *Aile Tatili — Önemli Bilgi*\n\nRixos Sharm El Sheikh 18+ Adults Only oteli olduğundan çocuklu aileler için uygun değildir.\n\nAileler için önerimiz:\n🏨 *Rixos Premium Magawish*\n✅ Rixy Kids Club (4-12 yaş)\n✅ Geniş suite ve villa seçenekleri\n✅ Ultra HSD konsept\n\nDetaylı bilgi için beni arayın 📞`,
       priceRequest: `💰 *Fiyat Bilgisi — Rixos Sharm El Sheikh*\n\n📅 Tarih:\n👥 Kişi sayısı:\n🛏 Oda tipi:\n\nBilgileri paylaşın, en güncel fiyatı hemen ileteyim ✅`,
       transfer: `🚐 *Transfer — Rixos Sharm El Sheikh*\n\nHavalimanı: SSH · Mesafe: 8 km · Süre: ~10-15 dk\n\n✈️ Uçuş no:\n🕐 İniş saati:\n👥 Kişi sayısı:\n\n3 gece ve üzeri konaklamada transfer dahil 🎁`,
-    },
   },
+  },
+];
