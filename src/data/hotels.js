@@ -227,11 +227,25 @@ export const HOTELS = [
     ],
 
     whatsappTemplates: {
-      general: "Merhaba! 🌊 Rixos Radamis Sharm El Sheikh hakkında bilgi almak istediğinizi gördük. 300.000 m²'lik devasa tesiste 1642 oda, 26 villa, Aqua Mania Jungle Park (26 kaydırak), Rixy Kids Town ve 16 A La Carte restoran sizi bekliyor. Size özel fiyat teklifi için hangi tarihler uygun?",
-      honeymoon: "Tebrikler! 💍 Balayınız için Rixos Radamis'te özel sürprizler hazırlayabiliriz: süit dekorasyonu, Anjana Spa çift masajı ve romantik akşam yemeği rezervasyonu. Tarihlerinizi ve oda tercihini paylaşır mısınız?",
-      family: "Merhaba! 👨‍👩‍👧‍👦 Aile tatili için Rixos Radamis harika bir seçim! Rixy Kids Town'da Chef Academy, STEM Lab, Robot Coding ve 26 kaydıraklı aquapark dahil. Çocukların yaşlarını ve kişi sayısını belirtir misiniz, size özel hesaplama yapalım?",
-      priceRequest: "Merhaba! Rixos Radamis Sharm El Sheikh için fiyat araştırıyorsunuz. Tarihler, kişi sayısı ve oda tipini paylaşır mısınız? En uygun teklifi hemen hazırlayalım. 🏨",
-      transfer: "Rixos Radamis Sharm El Sheikh, havalimanına sadece 6 km — yaklaşık 10 dakika. Transfer talep etmek ister misiniz? Uçuş saatinizi belirtin, düzenleyelim. ✈️"
+      general: "Merhaba, Rixos Radamis hakkında bilgi almak istiyorsunuz, doğru mu anladım?\n\nŞarm'ın en büyük resort'larından biri — 26 kaydıraklı aquapark, Rixy Kids Town çocuk şehri ve 16 farklı A La Carte restoran. Hepsi Ultra HSD kapsamında, ayrıca bir şey ödemiyorsunuz.\n\nHangi tarihler aklınızda, kaç kişisiniz?",
+
+      honeymoon: "Tebrikler, ne güzel bir karar!\n\nRadamis'te balayı için havuz manzaralı süit ayarlıyoruz, check-in'de küçük bir sürpriz hazırlıyoruz. Anjana Spa'da çift masaj, akşamları T-Bone veya Wabi Sabi'de masa — sakin ama her şey yanı başınızda.\n\nTarihlerinizi paylaşır mısınız? Hangi oda tipini düşündüğünüzü de söylerseniz hemen bakayım.",
+
+      family: "Merhaba! Aile tatili için Radamis gerçekten iyi bir seçim.\n\nRixy Kids Town sabah 9'dan gece 11'e kadar açık — şeflik, robotik kodlama, itfaiyecilik, sürücü simülatörü. Çocuklar oraya girince çıkmak istemiyorlar. Siz de 26 kaydıraklı aquaparkta ya da Anjana Spa'da rahatlıyorsunuz, hesap yok çünkü her şey dahil.\n\nÇocukların yaşlarını ve kaç kişi olduğunuzu yazabilir misiniz?",
+
+      priceRequest: "Tabii, hemen bakayım.\n\nŞu bilgileri paylaşabilir misiniz:\n– Hangi tarihler?\n– Kaç yetişkin, kaç çocuk (varsa yaşları)?\n– Oda tipi tercihiniz var mı, yoksa ben önereyim mi?\n\nBunları alınca size gerçekçi bir rakam vereyim.",
+
+      transfer: "Havalimanına 6 km, yaklaşık 10 dakikalık yol — kısa bir transfer.\n\nAyarlamak ister misiniz? Uçuş saatinizi ve kaç kişi olduğunuzu yazarsanız halledelim.",
+
+      followUp: "Merhaba, geçen gün Radamis hakkında konuşmuştuk — aklınıza takılan bir şey var mı?\n\nFarklı tarihler veya oda seçenekleri görmek isterseniz de bakmaya hazırım.",
+
+      lastRoomWarning: "Radamis için baktığım tarihlerde müsaitlik oldukça daralıyor. Kesin bir bilgi vermek istemem ama eğer bu tarihler aklınızdaysa yakın zamanda netleştirmekte fayda var.\n\nHâlâ düşünüyor musunuz?",
+
+      priceIncrease: "Merhaba, size bir bilgi geçmek istedim — baktığınız tarihler için fiyatlar kısa süre içinde güncellenecek.\n\nEğer karar aşamasındaysanız şu anki rakamla ilerlemek daha avantajlı olabilir. Sormak istediğiniz bir şey var mı?",
+
+      reservationClose: "Rezervasyonunuz için son adıma geldik. Onaylamam için tarih, oda tipi ve kişi sayısını bir kez daha teyit edebilir misiniz?\n\nBir sorunuz varsa hemen yanıtlayayım, aksi halde işlemi başlatıyorum.",
+
+      flightUpdate: "Uçuş bilgilerinizde bir değişiklik olduysa lütfen beni haberdar edin — transfer saatini ve check-in planını buna göre güncelleyelim.\n\nYeni saat veya sefer numaranız hazır olunca yazabilirsiniz."
     },
 
     lastUpdated: "2026-05-22"
@@ -398,11 +412,25 @@ export const HOTELS = [
     ],
 
     whatsappTemplates: {
-      general: "Merhaba! 🏖️ Rixos Radamis Beach Hotel — Kızıldeniz'e sıfır, özel cabanalar ve Ultra HSD konfort sizi bekliyor. Tarihlerinizi paylaşır mısınız, size özel fiyat verelim?",
-      honeymoon: "Tebrikler! 💍 Balayı için denize sıfır Beach Hotel süit, özel cabana ve romantik akşam yemeği paketi hazırlayabiliriz. Tarihlerinizi belirtin!",
-      family: "Merhaba! 👨‍👩‍👦 Denize sıfır aile tatili için Rixos Radamis Beach Hotel harika! Rixy Kids Club, 11 A La Carte restoran ve özel plaj. Çocukların yaşlarını paylaşır mısınız?",
-      priceRequest: "Rixos Radamis Beach Hotel için fiyat araştırıyorsunuz. Tarih, kişi sayısı ve oda tipini belirtir misiniz? Hemen teklif hazırlayalım. 🌊",
-      transfer: "Rixos Radamis Beach Hotel, havalimanına 9 km — yaklaşık 10 dakika. Transfer ayarlamak ister misiniz? Uçuş saatini belirtin, halledelim. ✈️"
+      general: "Merhaba, Rixos Radamis Beach Hotel'e bakıyorsunuz, doğru mu?\n\nBuranın en güçlü özelliği tam anlamıyla denize sıfır olması — balkondan deniz, odadan çıkınca plaj. Özel cabanalar da var, plajda kendinize ait bir köşe. Ultra HSD kapsamında her şey dahil, 11 A La Carte restoran seçenek.\n\nHangi tarihler aklınızda?",
+
+      honeymoon: "Tebrikler!\n\nBalayı için Beach Hotel güzel bir seçim — Kızıldeniz'e bakan oda, özel cabana ve istediğiniz akşam için masa ayarı. Check-in'e bir şeyler de ekleyebiliriz tabii.\n\nTarihlerinizi ve hangi oda tipini düşündüğünüzü yazabilir misiniz?",
+
+      family: "Merhaba! Aile tatili için Radamis Beach Hotel'e bakıyorsunuz, anlıyorum.\n\nDenize sıfır konum çocuklu aileler için gerçekten rahat — odadan çıkınca plaj, Rixy Kids Club gece 11'e kadar açık. 11 A La Carte restoran var, Ultra HSD kapsamında hesap gelmiyor.\n\nÇocukların yaşları ve kaç kişi olduğunuzu yazar mısınız?",
+
+      priceRequest: "Tabii, hemen bakayım.\n\nŞu bilgileri alabilir miyim:\n– Giriş ve çıkış tarihleri?\n– Kaç yetişkin, kaç çocuk?\n– Özel bir oda tercihiniz var mı?\n\nBunlara göre gerçekçi bir rakam vereyim.",
+
+      transfer: "Havalimanına 9 km, yaklaşık 10 dakika yol.\n\nTransfer ayarlamamı ister misiniz? Uçuş saatinizi ve kaç kişi olduğunuzu yazın, halledelim.",
+
+      followUp: "Merhaba, Beach Hotel için konuşmuştuk — aklınıza takılan bir şey var mı?\n\nFarklı tarih veya oda seçeneklerine bakmak isterseniz de yardımcı olmaya hazırım.",
+
+      lastRoomWarning: "Beach Hotel için baktığım tarihlerde müsaitlik azalmaya başladı. Şu an için iyi bir seçenek var ama uzun süre beklemeyebilir.\n\nHâlâ değerlendiriyor musunuz?",
+
+      priceIncrease: "Merhaba, kısa bir bilgi geçmek istedim — baktığınız tarihler için fiyatlar yakında güncellenecek.\n\nEğer hâlâ düşünüyorsanız şu anki rakamı kilitlemek mantıklı olabilir. Sormak istediğiniz bir şey var mı?",
+
+      reservationClose: "Her şey tamam görünüyor, son adıma geldik.\n\nTarih, oda tipi ve kişi sayısını bir kez teyit edebilir misiniz? Bir sorunuz yoksa rezervasyonu başlatıyorum.",
+
+      flightUpdate: "Uçuş bilgilerinizde değişiklik olduysa lütfen yazın — transfer ve check-in planını ona göre ayarlayalım.\n\nYeni sefer saatiniz hazır olunca haberdar edin."
     },
 
     lastUpdated: "2026-05-22"
@@ -652,11 +680,25 @@ export const HOTELS = [
     ],
 
     whatsappTemplates: {
-      general: "Merhaba! 🌊 Rixos Premium Seagate hakkında bilgi almak istediğinizi gördük. 23 kaydıraklı Aquaventure Park dahil, Swim Up odalar ve 12 A La Carte restoran sizi bekliyor. Tarihlerinizi paylaşır mısınız?",
-      honeymoon: "Tebrikler! 💍 Rixos Premium Seagate Swim Up oda + Anjana Spa çift masajı + özel akşam yemeği paketi mükemmel bir balayı başlangıcı. Tarihlerinizi yazın, detayları birlikte planlayalım.",
-      family: "Merhaba! 👨‍👩‍👧‍👦 Rixos Premium Seagate'de 23 kaydıraklı Aquaventure Park, Lazy River ve aile odaları sizi bekliyor. Çocukların yaş ve sayısını belirtir misiniz?",
-      priceRequest: "Rixos Premium Seagate için fiyat araştırıyorsunuz. Tarih, kişi sayısı ve oda tipini (örn. Swim Up, Family Room) paylaşır mısınız? Hemen hazırlayalım. 🏨",
-      transfer: "Rixos Premium Seagate, havalimanına 9 km — yaklaşık 10 dakika. Transfer ayarlamamı ister misiniz? Uçuş saatinizi yazın. ✈️"
+      general: "Merhaba, Rixos Premium Seagate için bilgi istiyorsunuz anlıyorum.\n\nSeagate biraz farklı bir his — aynı Rixos kalitesi ama daha sakin, daha kişisel. Swim Up oda seçeneği var, terasta başlayan sabah direkt havuza atlıyor. Aquaventure Park tamamen dahil, 12 A La Carte restoran hazır.\n\nHangi tarihler ve ne tür bir oda düşünüyorsunuz?",
+
+      honeymoon: "Tebrikler!\n\nSeagate'te balayı için Swim Up oda güzel bir başlangıç — sabah terastan havuza, Anjana Spa'da çift masaj, akşam Epicure'de Modern Fransız menü. Romantik bir hafta planlamak zor değil.\n\nTarihlerinizi yazın, tercih ettiğiniz oda tipini de söylerseniz hemen detaylandırayım.",
+
+      family: "Merhaba! Seagate'e aile tatili için bakıyorsunuz, anlıyorum.\n\nAquaventure Park'ta 23 kaydırak, Lazy River, dönme dolap ve çarpışan araba var — çocuklar oraya girince çıkmak istemez. Rixy Kids Club gece 11'e kadar açık. Family Room Aqua alırsanız aquaparka adım mesafesinde oluyorsunuz.\n\nKaç kişisiniz, çocukların yaşları ne?",
+
+      priceRequest: "Tabii, tarih ve kişi sayısını paylaşır mısınız?\n\nSwim Up, aile odası veya villa gibi belirli bir oda tercihiniz varsa onu da yazın — ona göre daha isabetli bir teklif çıkarayım.",
+
+      transfer: "Havalimanına 9 km, yaklaşık 10 dakika.\n\nTransfer ayarlamak ister misiniz? Uçuş saatinizi ve kaç kişi olduğunuzu yazın, halledelim.",
+
+      followUp: "Merhaba, Seagate için konuşmuştuk — aklınızda hâlâ var mı?\n\nFarklı tarih veya oda seçeneklerine bakmak isterseniz söyleyin, bir de ona bakayım.",
+
+      lastRoomWarning: "Seagate için baktığım tarihlerde Swim Up odalar dolmaya başladı. Başka oda tipleri mevcut ama bu konuda bilginiz olsun istedim.\n\nHâlâ değerlendiriyor musunuz?",
+
+      priceIncrease: "Merhaba, Seagate için bir not düşmek istedim — baktığınız tarihlerde fiyatlar kısa süre içinde güncellenecek.\n\nEğer hâlâ düşünüyorsanız mevcut rakamı kilitlemek avantajlı olabilir. Sormak istediğiniz bir şey var mı?",
+
+      reservationClose: "Her şey hazır, son adıma geldik.\n\nTarih, oda tipi ve kişi sayısını teyit edebilir misiniz? Eklemek istediğiniz bir şey yoksa rezervasyonu başlatıyorum.",
+
+      flightUpdate: "Uçuş bilgilerinizde değişiklik olduysa lütfen bildirin — transfer ve giriş planını buna göre güncelleyelim.\n\nYeni sefer saatiniz hazır olunca yazabilirsiniz."
     },
 
     lastUpdated: "2026-05-22"
@@ -883,11 +925,25 @@ export const HOTELS = [
     ],
 
     whatsappTemplates: {
-      general: "Merhaba! 🏨 Swissotel Sharm El Sheikh — dünyanın tek Ultra HSD Swissôtel'i, 2024 açılışı ve Naama Bay'a 1 km! Aile mi, çift mi tatil planlıyorsunuz, size uygun bölümü önerelim. Tarihlerinizi paylaşır mısınız?",
-      honeymoon: "Tebrikler! 💍 2024 açılışı Swissotel Adults Only süit + Purovel Spa çift masajı + Sky Lounge akşamı. Balayı için taze ve zarif bir tesis. Tarihlerinizi yazın, detayları planlayalım.",
-      family: "Merhaba! 👨‍👩‍👦 Swissotel Aqua bölümünde bağlantılı aile odaları, 10 kaydıraklı aquapark ve gece 11'e kadar çocuk kulübü hazır. Çocukların yaşlarını belirtir misiniz?",
-      priceRequest: "Swissotel Sharm için fiyat araştırıyorsunuz. Adults Only mu, Aqua bölümü mü tercih edersiniz? Tarih ve kişi sayısını paylaşın, hemen teklif hazırlayalım. 🌟",
-      transfer: "Swissotel Sharm El Sheikh, havalimanına 11,5 km. Transfer ayarlamamı ister misiniz? Uçuş saatinizi yazın. ✈️"
+      general: "Merhaba, Swissotel Sharm için bilgi almak istiyorsunuz anlıyorum.\n\n2024'te açıldı, her şey sıfırdan yeni — dünyanın tek Ultra HSD Swissôtel'i bu arada. Adults Only ve aile bölümü aynı tesiste ama tamamen ayrı çalışıyor. Naama Bay'a da 1 km.\n\nÇift mi aile mi tatili planlıyorsunuz? Ona göre uygun bölümü konuşalım.",
+
+      honeymoon: "Tebrikler!\n\nBalayı için Swissotel'in Adults Only bölümü gerçekten güzel bir seçenek — etrafınızda sadece yetişkinler, 2024 açılışı her şey yeni. Purovel Spa'da çift masaj, Sky Lounge'da gün batımı, 55–120 m² arasında süit seçenekleri.\n\nTarihlerinizi ve kaç gecelik düşündüğünüzü yazabilir misiniz?",
+
+      family: "Merhaba! Swissotel Aqua bölümü aile tatili için iyi kurgulanmış.\n\nBağlantılı aile odaları aquaparka yakın — dalgalar havuzu ve Lazy River de var. Çocuk kulübü gece 11'e kadar 4–12 yaş için açık. Naama Bay'a 1 km, akşam şehire çıkma seçeneği de mevcut.\n\nÇocukların yaşları ve kaç kişi olduğunuzu yazar mısınız?",
+
+      priceRequest: "Tabii.\n\nAdults Only bölümü mü, aile bölümü mü düşünüyorsunuz? Tarih ve kişi sayısını da paylaşın, hemen bir teklif hazırlayayım.",
+
+      transfer: "Havalimanına 11,5 km, yaklaşık 15 dakika.\n\nTransfer ayarlamak ister misiniz? Uçuş saatinizi yazın, halledelim.",
+
+      followUp: "Merhaba, Swissotel için konuşmuştuk — hâlâ değerlendiriyor musunuz?\n\nFarklı tarih veya oda seçeneklerine bakabiliriz, söylemek yeterli.",
+
+      lastRoomWarning: "Swissotel'de baktığım tarihler için Adults Only süitlerde yer azalmaya başladı. Aqua bölümünde seçenek daha geniş, ama bilginiz olsun istedim.\n\nHâlâ düşünüyor musunuz?",
+
+      priceIncrease: "Merhaba, kısa bir bilgi — Swissotel için baktığınız tarihlerde fiyat güncellemesi yaklaşıyor.\n\nEğer karar aşamasındaysanız mevcut rakamı kilitlemekte fayda var. Sormak istediğiniz bir şey var mı?",
+
+      reservationClose: "Her şey hazır görünüyor, son adım kaldı.\n\nTarih, bölüm (Adults Only / Aqua), oda tipi ve kişi sayısını bir kez teyit edebilir misiniz? Onay gelince başlatıyorum.",
+
+      flightUpdate: "Uçuş bilgilerinizde bir değişiklik olduysa lütfen yazın — transfer planını buna göre düzenleyelim.\n\nYeni sefer saatiniz netleşince haberdar edin."
     },
 
     lastUpdated: "2026-05-22"
@@ -1096,11 +1152,25 @@ export const HOTELS = [
     ],
 
     whatsappTemplates: {
-      general: "Merhaba! 🏝️ Rixos Premium Magawish Hurghada — 1 km özel plaj, 30 ısıtmalı havuz, en küçük odası 130 m²'den başlayan Hurghada'nın en prestijli suite & villa resort'u. Tarihlerinizi ve kaç kişilik konaklamayı düşündüğünüzü paylaşır mısınız?",
-      honeymoon: "Tebrikler! 💍 Royal Villa'da özel bahçe & havuz + kişisel butler + Anjana Spa hamam ritüeli. Balayı için daha özel bir yer düşünmek zor. Tarihlerinizi yazın, detayları planlayalım.",
-      family: "Merhaba! 👨‍👩‍👧‍👦 Executive Family Suite (170 m²) veya Executive Pool Villa (240 m²) ile tüm aile rahat. Rixy Kids Club gece 11'e kadar açık, 1 km plaj ve 30 havuz. Çocuk sayısı ve yaşlarını belirtir misiniz?",
-      priceRequest: "Rixos Magawish Hurghada için fiyat araştırıyorsunuz. Süit mi villa mı, tarih ve kişi sayısı nedir? Hemen teklif hazırlayalım. 🌺",
-      transfer: "Rixos Magawish, Hurghada havalimanına 7 km — yaklaşık 10–15 dakika. Transfer ayarlamak ister misiniz? Uçuş saatinizi belirtin. ✈️"
+      general: "Merhaba, Rixos Magawish Hurghada için bilgi almak istiyorsunuz anlıyorum.\n\nBurası biraz farklı bir konsept — standart oda yok, en küçük oda 130 m²'den başlıyor, her şey süit ya da villa. 1 km özel plaj, 30 ısıtmalı havuz. Alan ve sessizlik öncelikli olanlar için Hurghada'nın en iyi seçeneklerinden biri.\n\nKaç kişilik bir konaklama düşünüyorsunuz, tarihler ne zaman?",
+
+      honeymoon: "Tebrikler!\n\nBalayı için Magawish'te mahremiyet gerçekten farklı bir seviyede — Lagoon Swim Up Suite'te terasta başlayan sabah, Anjana Spa'da hamam ritüeli ve çift masaj, Beach Bar'da Kızıldeniz'e karşı akşam. Etrafınız kalabalık değil, tesis büyük ve sakin.\n\nTarihlerinizi yazın, Swim Up Süit mi yoksa Pool Villa mı bakalım?",
+
+      family: "Merhaba! Magawish geniş aileler için gerçekten iyi kurgulanmış.\n\nExecutive Family Suite 170 m², Executive Pool Villa ise 240 m² — herkesin nefes alacağı alan var. Rixy Kids Club gece 11'e kadar 4–12 yaş için açık, The Mangal'da açık hava BBQ, 30 ısıtmalı havuz yıl boyu aktif.\n\nKaç kişisiniz, çocukların yaşları ne?",
+
+      priceRequest: "Tabii, hemen bakayım.\n\nSüit mi villa mı düşünüyorsunuz? Tarih ve kişi sayısını da paylaşın, gerçekçi bir teklif çıkarayım.",
+
+      transfer: "Hurghada havalimanına 7 km, yaklaşık 10–15 dakika.\n\nTransfer ayarlamak ister misiniz? Uçuş saatinizi ve kaç kişi olduğunuzu yazın, halledelim.",
+
+      followUp: "Merhaba, Magawish için konuşmuştuk — hâlâ değerlendiriyor musunuz?\n\nFarklı tarih veya oda seçeneklerine bakabiliriz, söylemek yeterli.",
+
+      lastRoomWarning: "Magawish'te baktığım tarihler için villa müsaitliği daralıyor. Süit seçenekleri daha geniş ama bilginiz olsun istedim.\n\nHâlâ düşünüyor musunuz?",
+
+      priceIncrease: "Merhaba, kısa bir bilgi — Magawish için baktığınız tarihlerde fiyatlar yakında güncellenecek.\n\nEğer karar aşamasındaysanız mevcut rakamı kilitlemek mantıklı olabilir. Sormak istediğiniz bir şey var mı?",
+
+      reservationClose: "Her şey hazır, son adıma geldik.\n\nSüit / villa tipi, tarih ve kişi sayısını bir kez teyit edebilir misiniz? Onay gelince başlatıyorum.",
+
+      flightUpdate: "Uçuş bilgilerinizde değişiklik olduysa lütfen yazın — transfer ve giriş planını buna göre güncelleyelim.\n\nYeni sefer saatiniz netleşince haberdar edin."
     },
 
     lastUpdated: "2026-05-22"
