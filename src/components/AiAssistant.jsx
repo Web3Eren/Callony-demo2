@@ -1,17 +1,17 @@
 // src/components/AiAssistant.jsx
 import { useState, useRef, useEffect } from "react";
 import { C, F } from "../utils/theme.js";
-import { buildAIContext } from "../utils/search.js";
 import { HOTELS } from "../data/hotels.js";
+import { getAIResponse } from "../utils/aiLogic.js";
 import { CopyBtn } from "./UI.jsx";
 
 const QUICK = [
   "Bu oteli balayı çiftine nasıl anlatırım?",
   "Müşteri 'çok pahalı' dedi, ne demeliyim?",
   "Çocuklu aile için hangi otel en uygun?",
-  "Seagate ile Rixos Sharm farkı nedir?",
+  "Seagate ile Radamis farkı nedir?",
   "Mısır güvenli mi sorusuna nasıl cevap vereyim?",
-  "Golf Villa'nın en güçlü satış noktası nedir?",
+  "Magawish'in en güçlü satış noktası nedir?",
   "Adult Only oteli nasıl pazarlayayım?",
   "Snorkeling için en iyi otel hangisi?",
 ];
@@ -42,8 +42,8 @@ function Msg({ m }) {
       )}
       <div style={{maxWidth:"76%",display:"flex",flexDirection:"column",
         alignItems:isUser?"flex-end":"flex-start",gap:4}}>
-        <div style={{padding:"10px 14px",borderRadius: isUser?"10px 10px 2px 10px":"10px 10px 10px 2px",
-          background: isUser ? C.cyanDim : C.surface2,
+        <div style={{padding:"10px 14px",borderRadius:isUser?"10px 10px 2px 10px":"10px 10px 10px 2px",
+          background:isUser?C.cyanDim:C.surface2,
           border:`1px solid ${isUser?C.cyan+"44":C.border}`,
           fontSize:13,color:C.text,lineHeight:1.65,fontFamily:F.body,whiteSpace:"pre-line"}}>
           {m.text}
@@ -66,32 +66,36 @@ export function AiAssistant() {
   const bottomRef = useRef(null);
   const inputRef = useRef(null);
 
-  useEffect(() => { bottomRef.current?.scrollIntoView({behavior:"smooth"}); }, [msgs, loading]);
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({behavior:"smooth"});
+  }, [msgs, loading]);
 
-  const send = async (q) => {
+  const send = (q) => {
     const question = (q || input).trim();
     if (!question || loading) return;
     setInput("");
     setMsgs(m => [...m, {role:"user", text:question}]);
     setLoading(true);
-    try {
-      const res = await fetch("/api/ai", {
-        method:"POST",
-        headers:{"Content-Type":"application/json"},
-        body:JSON.stringify({question, hotelContext:buildAIContext(HOTELS)}),
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error||"Sunucu hatası");
-      setMsgs(m => [...m, {role:"assistant", text:data.answer}]);
-    } catch(err) {
-      setMsgs(m => [...m, {role:"assistant", text:`⚠️ ${err.message}`}]);
-    }
-    setLoading(false);
-    inputRef.current?.focus();
+
+    // Demo typing delay — API yok, tamamen frontend
+    const delay = 300 + Math.random() * 200;
+    setTimeout(() => {
+      let answer;
+      try {
+        answer = getAIResponse(question);
+      } catch(err) {
+        answer = "⚠️ Bir hata oluştu, lütfen tekrar deneyin.";
+        console.error("[AiAssistant]", err);
+      }
+      setMsgs(m => [...m, {role:"assistant", text:answer}]);
+      setLoading(false);
+      inputRef.current?.focus();
+    }, delay);
   };
 
   return (
     <div style={{height:"100%",display:"flex",flexDirection:"column",background:C.bg}}>
+
       {/* Header */}
       <div style={{padding:"16px 24px",borderBottom:`1px solid ${C.border}`,
         background:C.surface,flexShrink:0}}>
@@ -109,15 +113,17 @@ export function AiAssistant() {
             <span style={{fontSize:11,color:C.textSub,fontFamily:F.body}}>Hazır</span>
           </div>
         </div>
+
         {/* Quick prompts */}
         <div style={{display:"flex",flexWrap:"wrap",gap:5}}>
           {QUICK.map(p=>(
-            <button key={p} onClick={()=>send(p)} style={{
+            <button key={p} onClick={()=>send(p)} disabled={loading} style={{
               padding:"3px 10px",borderRadius:99,fontSize:10,fontWeight:500,
               border:`1px solid ${C.border2}`,background:"transparent",
               color:C.textSub,fontFamily:F.body,transition:"all .12s",
+              cursor:loading?"not-allowed":"pointer",
             }}
-            onMouseOver={e=>{e.currentTarget.style.borderColor=C.cyan;e.currentTarget.style.color=C.cyan;}}
+            onMouseOver={e=>{if(!loading){e.currentTarget.style.borderColor=C.cyan;e.currentTarget.style.color=C.cyan;}}}
             onMouseOut={e=>{e.currentTarget.style.borderColor=C.border2;e.currentTarget.style.color=C.textSub;}}>
               {p}
             </button>
@@ -138,22 +144,25 @@ export function AiAssistant() {
         <input ref={inputRef} value={input} onChange={e=>setInput(e.target.value)}
           onKeyDown={e=>e.key==="Enter"&&!e.shiftKey&&send()}
           placeholder="Soru yazın... (Enter gönderir)"
+          disabled={loading}
           style={{flex:1,padding:"9px 14px",borderRadius:9,
             border:`1px solid ${input?C.cyan+"55":C.border2}`,
             background:C.bg,color:C.text,fontSize:13,outline:"none",
-            fontFamily:F.body,transition:"border-color .15s"}}/>
+            fontFamily:F.body,transition:"border-color .15s",
+            opacity:loading?.6:1}}/>
         <button onClick={()=>send()} disabled={loading||!input.trim()} style={{
           padding:"9px 18px",borderRadius:9,
-          background: loading||!input.trim() ? C.surface2 : `linear-gradient(135deg,${C.cyan},#0ea5e9)`,
+          background:loading||!input.trim()?C.surface2:`linear-gradient(135deg,${C.cyan},#0ea5e9)`,
           border:`1px solid ${loading||!input.trim()?C.border2:"transparent"}`,
-          color: loading||!input.trim() ? C.textDim : "#fff",
+          color:loading||!input.trim()?C.textDim:"#fff",
           fontSize:13,fontWeight:600,fontFamily:F.body,
-          opacity: loading||!input.trim() ? .6 : 1,
-          transition:"all .15s",
+          opacity:loading||!input.trim()?.6:1,
+          transition:"all .15s",cursor:loading||!input.trim()?"not-allowed":"pointer",
         }}>
-          {loading ? "…" : "→"}
+          {loading?"…":"→"}
         </button>
       </div>
+
     </div>
   );
 }
