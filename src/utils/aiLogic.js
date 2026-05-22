@@ -30,7 +30,7 @@ const HOTELS = {
     aquapark: true,
     snorkeling: true,
     swimUp: false,
-    objection: "Fiyat farkı tamamen aquapark, çocuk kulübü ve ultra HSD konsepiyle açıklanıyor. Başka bir otelde bu hizmetleri ayrı ayrı öderdiniz — burada hepsi dahil.",
+    objection: "Fiyat farkı tamamen aquapark, çocuk kulübü ve ultra HSD konseptiyle açıklanıyor. Başka bir otelde bu hizmetleri ayrı ayrı öderdiniz — burada hepsi dahil.",
   },
   radamisBeach: {
     fullName: "Rixos Radamis Beach Hotel",
@@ -59,7 +59,22 @@ const HOTELS = {
     aquapark: false,
     snorkeling: true,
     swimUp: true,
-    objection: "Seagate'in fiyatı, adults only konsepi, swim-up odalar ve premium restoranlarla tamamen örtüşüyor. Karşılaştırılabilir bir otel bulmak Şarm'da çok zor.",
+    objection: "Seagate'in fiyatı, adults only konsepti, swim-up odalar ve premium restoranlarla tamamen örtüşüyor. Karşılaştırılabilir bir otel bulmak Şarm'da çok zor.",
+  },
+  rixosSharm: {
+    fullName: "Rixos Sharm El Sheikh — Adults Only 18+",
+    stars: 5,
+    concept: "Ultra Her Şey Dahil — Adults Only (18+)",
+    pitch: "Rixos Sharm El Sheikh, 18+ adults only konseptiyle Şarm'ın en özel yetişkin deneyimini sunuyor. Swim-up odalar, premium restoranlar ve tam anlamıyla huzurlu bir tatil ortamı. Seagate'in bir adım ötesinde — tam 18+ sınırıyla gerçek sessizlik.",
+    honeymoon: "18+ adults only ortamı, swim-up odalar ve romantik plaj köşeleriyle Rixos Sharm balayı çiftleri için mükemmel. Hiçbir çocuk gürültüsü olmadan tam bir çift tatili deneyimi yaşayın.",
+    family: "Rixos Sharm El Sheikh 18+ adults only olduğu için çocuklu aileler için uygun değil. Çocuklarınızla tatil için Rixos Radamis'i öneririm — aquapark ve kids club ile çocuklar çok daha mutlu olur.",
+    strengths: ["Adults Only 18+ — mutlak sessizlik garantisi", "Swim-up odalar", "Ultra HSD — tüm yemek ve içecekler dahil", "Premium restoranlar", "Özel plaj erişimi", "Lüks spa & wellness"],
+    adultOnly: true,
+    adultAge: 18,
+    aquapark: false,
+    snorkeling: true,
+    swimUp: true,
+    objection: "Rixos Sharm'ın fiyatı, 18+ adults only garantisi, swim-up odalar, ultra HSD konsept ve premium hizmet paketinin karşılığı. Aynı konforu ve sessizliği başka bir otelde bulmak Şarm'da neredeyse imkânsız. Net bir yatırım.",
   },
   swissotel: {
     fullName: "Swissotel Sharm El Sheikh",
@@ -95,11 +110,22 @@ const HOTELS = {
 function findHotels(q) {
   const n = norm(q);
   const found = [];
+
+  // Rixos Sharm — 18+ adults only
+  if (
+    has(n, "rixos sharm", "sharm adult only", "adult only rixos", "18+ rixos", "rixos 18", "adults only") ||
+    (has(n, "swim up rixos") && !has(n, "seagate", "magawish", "radamis"))
+  ) {
+    // "adults only" tek başına gelirse hem Seagate hem Rixos Sharm'ı döndür (aşağıda kontrol edilir)
+    if (!found.includes(HOTELS.rixosSharm)) found.push(HOTELS.rixosSharm);
+  }
+
   if (has(n, "radamis beach", "radamis hotel")) found.push(HOTELS.radamisBeach);
   else if (has(n, "radamis"))                   found.push(HOTELS.radamis);
   if (has(n, "seagate"))                        found.push(HOTELS.seagate);
   if (has(n, "swissotel", "swiss"))             found.push(HOTELS.swissotel);
   if (has(n, "magawish", "magavis"))            found.push(HOTELS.magawish);
+
   return found;
 }
 
@@ -165,15 +191,17 @@ Rezervasyon için müsaitlik sormamı ister misiniz?`;
 }
 
 function replySwimUp() {
-  return `🏊 **Swim-up oda: Rixos Premium Seagate**
+  return `🏊 **Swim-up oda seçenekleri:**
 
-Seagate, Şarm'da swim-up odalara sahip en prestijli otel. Odanızdan direkt havuza adım atabilirsiniz.
+**1. Rixos Sharm El Sheikh — Adults Only 18+** ⭐ Tam Sessizlik
+18+ adults only ortamında swim-up oda deneyimi. Odanızdan direkt havuza — hiçbir çocuk gürültüsü olmadan. Balayı ve çift tatilleri için birinci tercih.
 
-✅ Swim-up odalar adults only (16+) bölümünde
+**2. Rixos Premium Seagate (16+)**
+Seagate'in swim-up odaları da çok popüler. 16+ adults only, özel plaj ve premium restoranlarla lüks bir paket.
+
+✅ Her iki otelde de swim-up odalar Ultra HSD kapsamında
 ✅ Sabah kahvenizi havuz kenarında içebilirsiniz
-✅ Ultra HSD — tüm yemek ve içecekler dahil
-
-💍 Özellikle balayı çiftleri için çok popüler.
+💍 Özellikle balayı çiftleri için çok tercih ediliyor.
 
 ─
 Swim-up oda müsaitliğini kontrol etmemi ister misiniz?`;
@@ -186,18 +214,23 @@ function replySnorkeling() {
 
 **2. Rixos Premium Seagate** — Özel plaj, sakin adults only ortamında snorkeling keyfi.
 
-**3. Rixos Premium Magawish** — Villa'nızdan kısa yürüyüşle erişilebilen temiz mercan resifleri.
+**3. Rixos Sharm El Sheikh Adults Only 18+** — Huzurlu 18+ ortamında özel plajdan snorkeling deneyimi.
+
+**4. Rixos Premium Magawish** — Villa'nızdan kısa yürüyüşle erişilebilen temiz mercan resifleri.
 
 📌 Kızıldeniz, dünyanın en zengin mercan ekosistemlerinden biri — hangisini seçerseniz seçin hayal kırıklığı yaşamazsınız.`;
 }
 
 function replyHoneymoon() {
-  return `💍 **Balayı için en iyi 2 seçenek:**
+  return `💍 **Balayı için en iyi seçenekler:**
 
-**1. Rixos Premium Seagate** ⭐ En Çok Tercih Edilen
-Adults only (16+), swim-up odalar, özel plaj ve premium restoranlar. Gerçek bir balayı deneyimi istiyorsanız Seagate ilk tercih.
+**1. Rixos Sharm El Sheikh — Adults Only 18+** ⭐ En Romantik
+18+ adults only garantisi, swim-up odalar ve özel plajıyla tam anlamıyla ikili bir tatil. Hiçbir çocuk sesi duymadan romantik bir balayı istiyorsanız ilk tercih bu.
 
-**2. Rixos Premium Magawish**
+**2. Rixos Premium Seagate (16+)**
+Swim-up odalar, özel plaj ve candle-light akşam yemekleriyle balayı tam burada başlıyor. Adults only ortamı, o romantik huzuru garantiliyor.
+
+**3. Rixos Premium Magawish**
 Özel havuzlu villa seçeneği, butler servisi ve tam mahremiyet. "Kimse bizi rahatsız etmesin" diyen çiftler için ideal.
 
 ─
@@ -213,24 +246,28 @@ Dev aquapark (12 kaydırak), Rixy Kids Club (4-12 yaş ücretsiz), geniş aile o
 **2. Rixos Premium Magawish**
 Büyük aileler için geniş suite ve villa seçenekleri. Mahremiyet önemli olan aileler için ideal.
 
-📌 Seagate adults only (16+) olduğu için aile tatili için uygun değil — Radamis çok daha doğru bir tercih.
+📌 Rixos Sharm El Sheikh 18+ adults only olduğu için çocuklu aileler için kesinlikle uygun değil.
+📌 Seagate 16+ adults only olduğu için de aile tatili için uygun değil — Radamis çok daha doğru bir tercih.
 
 ─
 Kaç kişisiniz ve hangi tarihler için bakayım?`;
 }
 
 function replyAdultsOnly() {
-  return `🔞 **Adults Only otel: Rixos Premium Seagate (16+)**
+  return `🔞 **Adults Only otel seçenekleri:**
 
-Şarm El Şeyh'te adults only konseptini en iyi uygulayan otel Seagate.
+**1. Rixos Sharm El Sheikh — Adults Only 18+** ⭐ En Sıkı Sınır
+Şarm'da 18+ adults only konseptini uygulayan en özel otel. Swim-up odalar, ultra HSD ve gerçek anlamda sessiz bir tatil ortamı. Mutlak huzur isteyenlerin ilk tercihi.
 
-✅ 16+ yaş zorunlu — gerçek sessizlik garantisi
-✅ Swim-up odalar
-✅ Premium restoranlar (ekstra ücret yok)
-✅ Özel plaj
-✅ Ultra HSD konsept
+**2. Rixos Premium Seagate (16+)**
+16+ adults only, swim-up odalar, premium restoranlar ve özel plajla lüks bir yetişkin deneyimi.
 
-💬 "Çocuk sesi duymadan dinlenmek istedik, Seagate mükemmeldi" — misafir yorumu
+─
+**Fark ne?**
+· Rixos Sharm → 18+ (daha sıkı yaş sınırı, daha sessiz)
+· Seagate → 16+ (geniş premium imkânlar, prestijli lokasyon)
+
+Her ikisi de Ultra HSD konseptinde — yemek, içecek, aktivite dahil.
 
 ─
 Balayı mı yoksa çift tatili mi planlıyorsunuz?`;
@@ -244,6 +281,7 @@ Tüm otellere mesafe:
 · Rixos Radamis → 15-20 dk
 · Rixos Radamis Beach → 15-20 dk
 · Rixos Premium Seagate → 10-15 dk  ← en yakın
+· Rixos Sharm El Sheikh Adults Only → 10-15 dk
 · Swissotel Sharm → 10-15 dk
 · Rixos Premium Magawish → 20-25 dk
 
@@ -304,6 +342,29 @@ function replySafety() {
 📌 "Rixos bünyesinde tatil yapıyorsunuz, otel dışına çıkmanız gerekmiyor" şeklinde güvence verin.`;
 }
 
+// ─── Seagate vs Rixos Sharm karşılaştırması ──────────────────────────────────
+function replySeagateVsRixosSharm() {
+  return `📊 **Rixos Premium Seagate vs Rixos Sharm El Sheikh Adults Only**
+
+| | **Seagate** | **Rixos Sharm** |
+|---|---|---|
+| Yaş sınırı | 16+ | **18+** |
+| Swim-up oda | ✅ | ✅ |
+| Konsept | Ultra HSD | Ultra HSD |
+| Sessizlik | Yüksek | **Maksimum** |
+| Öne çıkan | Prestijli lokasyon | Mutlak adults only |
+
+**Seagate mi, Rixos Sharm mı?**
+
+· **Rixos Sharm** → 18+ sınırıyla daha sıkı bir yetişkin ortamı arıyorsanız, çocukların hiç olmadığı bir tatil istiyorsanız ilk tercih.
+· **Seagate** → 16+ adults only, daha köklü bir otel profili ve geniş premium restoran seçeneği istiyorsanız.
+
+💍 Balayı için her ikisi de mükemmel — fark tercih ve bütçeye göre şekilleniyor.
+
+─
+Hangi tarihlere bakayım?`;
+}
+
 // ─── Ana Fonksiyon ────────────────────────────────────────────────────────────
 export function getAIResponse(question) {
   try {
@@ -338,46 +399,79 @@ export function getAIResponse(question) {
       return replySnorkeling() + NOTE;
 
     // ── 7. Adults only ─────────────────────────────────────────────────────
-    if (has(q, "adults only", "adult only", "yetiskin", "yetişkin", "18+", "16+", "sadece yetiskin"))
+    if (has(q, "adults only", "adult only", "yetiskin", "yetişkin", "18+", "16+", "sadece yetiskin", "sadece yetişkin"))
       return replyAdultsOnly() + NOTE;
 
-    // ── 8. Balayı / çift ───────────────────────────────────────────────────
+    // ── 8. Seagate vs Rixos Sharm karşılaştırması ─────────────────────────
+    if (
+      (has(q, "seagate") && has(q, "rixos sharm", "sharm adult", "18+ rixos", "rixos 18")) ||
+      (has(q, "seagate") && has(q, "karsilastir", "karşılaştır", "fark", "hangisi"))
+    ) {
+      // Rixos Sharm da geçiyorsa özel karşılaştırma yap
+      if (has(q, "rixos sharm", "sharm adult", "18+")) {
+        return replySeagateVsRixosSharm() + NOTE;
+      }
+    }
+
+    // ── 9. Balayı / çift ───────────────────────────────────────────────────
     if (ctx === "honeymoon" && findHotels(q).length === 0)
       return replyHoneymoon() + NOTE;
 
-    // ── 9. Aile / çocuk ────────────────────────────────────────────────────
-    if (ctx === "family" && findHotels(q).length === 0)
-      return replyFamily() + NOTE;
+    // ── 10. Aile / çocuk — Rixos Sharm uyarısı ────────────────────────────
+    if (ctx === "family") {
+      const hotels = findHotels(q);
+      // Rixos Sharm sorulmuşsa özel uyarı ver
+      if (hotels.some(h => h === HOTELS.rixosSharm)) {
+        return [
+          "⚠️ **Rixos Sharm El Sheikh — Aile Tatili için Uygun Değil**",
+          "",
+          "Rixos Sharm El Sheikh **18+ adults only** bir otel olduğu için çocuklu aileler kabul edilmiyor.",
+          "",
+          "👨‍👩‍👧 **Çocuklu aileler için önerim:**",
+          "",
+          "**1. Rixos Radamis** ⭐ En Popüler",
+          "Dev aquapark (12 kaydırak), Rixy Kids Club (4-12 yaş ücretsiz), geniş aile odaları.",
+          "",
+          "**2. Rixos Premium Magawish**",
+          "Geniş suite ve villa seçenekleriyle büyük aileler için mükemmel.",
+          "",
+          "─\nKaç kişisiniz ve hangi tarihler için bakayım?",
+          NOTE,
+        ].join("\n");
+      }
+      if (hotels.length === 0) return replyFamily() + NOTE;
+    }
 
-    // ── 10. Pahalı itirazı (otel adı ile) ──────────────────────────────────
+    // ── 11. Pahalı itirazı ─────────────────────────────────────────────────
     if (has(q, "pahali", "pahalı", "ucuz", "fiyat", "neden bu kadar", "deger mi", "değer mi", "itiraz")) {
       const hotels = findHotels(q);
       return replyExpensive(hotels[0] || null) + NOTE;
     }
 
-    // ── 11. Otel karşılaştırma (2+ otel) ───────────────────────────────────
+    // ── 12. Otel karşılaştırma (2+ otel) ───────────────────────────────────
     const mentionedHotels = findHotels(q);
     if (mentionedHotels.length >= 2)
       return comparisonReply(mentionedHotels, ctx) + NOTE;
 
-    // ── 12. Tek otel sorusu ────────────────────────────────────────────────
+    // ── 13. Tek otel sorusu ────────────────────────────────────────────────
     if (mentionedHotels.length === 1)
       return singleHotelReply(mentionedHotels[0], ctx) + NOTE;
 
-    // ── 13. Genel balayı / aile (otel adı olmadan) ─────────────────────────
+    // ── 14. Genel balayı / aile (otel adı olmadan) ─────────────────────────
     if (ctx === "honeymoon") return replyHoneymoon() + NOTE;
     if (ctx === "family")    return replyFamily() + NOTE;
 
-    // ── 14. Fallback ───────────────────────────────────────────────────────
+    // ── 15. Fallback ───────────────────────────────────────────────────────
     return [
       "🤔 Bu konuda sizi daha iyi yönlendirebilmem için biraz daha bilgi verebilir misiniz?",
       "",
       "Örnek sorular:",
-      '· "Radamis ile Seagate farkı nedir?"',
+      '· "Rixos Sharm El Sheikh adults only mu?"',
+      '· "Seagate ile Rixos Sharm farkı nedir?"',
       '· "Balayı için hangi oteli önerirsiniz?"',
       '· "Çocuklu aile için en iyi otel hangisi?"',
+      '· "Swim-up oda hangi otellerde var?"',
       '· "Aquapark hangi otelde var?"',
-      '· "Swissotel adults only mu?"',
       '· "Vize gerekiyor mu?"',
       '· "Transfer süresi ne kadar?"',
       "",
