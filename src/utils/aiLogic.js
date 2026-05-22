@@ -1,3 +1,4 @@
+
 // src/utils/aiLogic.js
 // Callony Demo — Frontend Rule-Based AI
 // hotels.js ve faqs.js datasını okuyarak cevap üretir.
