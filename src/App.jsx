@@ -318,13 +318,13 @@ function VisaPage() {
       <div style={{background:C.surface,border:`1px solid ${C.gold}44`,
         borderRadius:11,padding:"15px 17px",marginBottom:20}}>
         <div style={{fontSize:13,fontWeight:700,color:C.gold,fontFamily:F.head,marginBottom:10}}>
-          ⚠️ Kritik Hatırlatmalar — Her Müşteriye Söyleyin
+          ⚠️ Kritik Hatırlatmalar — Her Misafire Söyleyin
         </div>
         {[
-          "Pasaport seyahat tarihinden itibaren min. 6 ay geçerli olmalı",
-          "Türk vatandaşları Mısır'a kapıda vize alabilir (25 USD, nakit/kart)",
-          "E-vize alternatifi: visa2egypt.gov.eg",
-          "Sinai vizesi yalnızca Şarm bölgesi için geçerli — Mısır geneli değil",
+          "Şarm El Şeyh için Türk vatandaşlarına vize gerekmez",
+          "Pasaport dönüş tarihinden itibaren minimum 6 ay geçerli olmalıdır",
+          "Hurghada, Kahire ve Şarm dışı Mısır bölgeleri için yaklaşık 30 USD kapıda vize vardır",
+          "Sinai Stamp yalnızca Şarm bölgesinde geçerlidir, Mısır geneli için geçerli değildir",
         ].map((n,i)=>(
           <div key={i} style={{display:"flex",gap:8,marginBottom:7,fontSize:13,
             color:C.text,fontFamily:F.body,alignItems:"flex-start"}}>
