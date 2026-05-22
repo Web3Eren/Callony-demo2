@@ -27,7 +27,7 @@ export const HOTELS = [
       "Havalimanına sadece 6 km"
     ],
 
-    competitorDiff: "Rixos Seagate'e göre aquapark daha büyük (26 vs 23 kaydırak) ve Rixy Kids Town çok daha kapsamlı. Swissotel'e göre tesis alanı ve aktivite çeşitliliği çok daha fazla. Yeni açılan Beach bölümüyle kıyaslandığında ana binanın Rixy Kids Town avantajı belirleyici.",
+    competitorDiff: "Radamis'in Rixy Kids Town'u gerçek anlamda bir çocuk şehri — şeflik akademisinden robotik kodlamaya, itfaiyecilikten sürücü okuluna kadar tematik deneyimler. Seagate'te bu yok. Aquapark da daha büyük: 26 aktif kaydırak vs Seagate'in 23'ü. Swissotel'e kıyasla tesis ölçeği ve aktivite zenginliği çok farklı bir ligde. Beach bölümüyle karşılaştırınca: plaj önceliğiniz varsa Beach, çocuk aktivitesi önceliğinizse ana bina.",
 
     roomTypes: [
       {
@@ -175,41 +175,41 @@ export const HOTELS = [
     },
 
     salesScript: {
-      opening: "Rixos Radamis Sharm El Sheikh — Kızıldeniz kıyısında 300.000 m²'lik bir tatil evreni. Aquapark, çocuk şehri, 16 farklı dünya mutfağı ve 24 saat Ultra HSD konfor. Tek bir ödemeyle her şey dahil.",
+      opening: "Şarm El Şeyh'te aile tatili denince Radamis farklı bir yerde duruyor. 300.000 m²'lik alan, 26 kaydıraklı aquapark, gerçek bir çocuk şehri ve 16 farklı dünya mutfağı — üstelik bunların hepsi tek ödemeyle. Çocuklar da siz de tatilde ayrı ayrı keyif çıkarıyorsunuz.",
       keyPoints: [
-        "Aqua Mania Jungle Park 26 kaydırak — ayrıca tek kuruş ödenmez",
-        "Rixy Kids Town: çocuklar şef, robot mühendisi, itfaiyeci olabilir",
-        "16 A La Carte restoran — her akşam farklı bir dünya mutfağı",
-        "Havalimanından 6 km — bagajlarla savaşmadan 10 dakikada otelde",
-        "Ultra HSD = tüm yiyecek, içecek, aktivite dahil"
+        "Aqua Mania Jungle Park: 26 aktif kaydırak, ayrıca tek kuruş ödenmiyor",
+        "Rixy Kids Town gerçek anlamda bir çocuk şehri — şeflik, robotik kodlama, itfaiyecilik, sürücü okulu",
+        "16 A La Carte restoran — her akşam farklı bir mutfak, rezervasyon ücretsiz",
+        "Havalimanından 6 km, iner inmez 10 dakikada oteldesiniz",
+        "Ultra HSD: yiyecek, içecek, aquapark, çocuk kulübü, animasyon hepsi dahil"
       ],
-      closing: "Tarihlerinizi paylaşın, sizin için kişiselleştirilmiş bir teklif hazırlayalım. Hangi tarihler uygun?"
+      closing: "Tatil tarihlerinizi ve kaç kişi olduğunuzu paylaşın, size özel bir teklif çıkarayım."
     },
 
-    honeymoonSalesScript: "300.000 m²'lik özel dünyanızda balayı başlasın. Havuz manzaralı süit odanızda romantik sabahlar, Anjana Spa'da çift masaj ritüeli, akşamları T-Bone Steak House veya Wabi Sabi'de şık akşam yemekleri. Check-in'den itibaren balayı sürprizleri hazırlanıyor — sadece tarihlerinizi belirtin.",
+    honeymoonSalesScript: "300.000 m²'lik tesiste kendinize ait bir köşe bulmak hiç zor değil. Havuz manzaralı süit odanızda sakin bir sabah, Anjana Spa'da çift masaj ritüeli, akşam T-Bone'da ya da Wabi Sabi'de iki kişilik masa. Check-in'de balayı süprizlerini biz ayarlıyoruz — sadece tarihleri siz belirleyin.",
 
-    familySalesScript: "Çocuklar Rixy Kids Town'da şefleri, robotik mühendisleri ve itfaiyecileri oynarken; siz Aqua Mania'nın 26 kaydırağını ya da Anjana Spa'yı keşfediyorsunuz. Akşam herkes 16 A La Carte arasından dilediğini seçiyor. Ultra HSD'de hesap sormak yok — her şey dahil. Aile tatilinde bu kadar huzurlu olmak mümkün.",
+    familySalesScript: "Çocuklar sabah 9'da Rixy Kids Town'a giriyor, gece 11'e kadar şef, robotik mühendisi, itfaiyeci oluyorlar. Siz o sürede Aqua Mania'nın 26 kaydırağını deniyorsunuz ya da Anjana Spa'da nefes alıyorsunuz. Akşam 16 A La Carte arasından herkes kendi istediğini seçiyor. Ultra HSD olduğu için hesap gelmiyor — sadece imza atıyorsunuz.",
 
     objections: [
       {
         q: "Mısır'dan emin değilim, güvenli mi?",
-        a: "Rixos global bir marka — standartlar Türkiye veya Dubai ile birebir aynı. Tesis tamamen kendi içinde kapalı bir dünya; dışarı çıkmanıza gerek yok. Şarm El Şeyh turistik bölge olarak oldukça güvenlidir."
+        a: "Rixos global bir zincir, standartlar Türkiye veya Dubai ile aynı. Tesis kendi içinde kapalı bir dünya — dışarıya çıkmanıza gerek kalmıyor. Şarm El Şeyh turistik bölge olarak yıllardır sorunsuz işliyor."
       },
       {
         q: "Uçuş süresi çok uzun değil mi?",
-        a: "İstanbul'dan Sharm El Sheikh'e direkt uçuşlar yaklaşık 3–3,5 saat. Havalimanına da sadece 6 km — iner inmez otelde oluyorsunuz."
+        a: "İstanbul'dan direkt uçuşlarla yaklaşık 3–3,5 saat. Havalimanına da 6 km — inip 10 dakikada otelde oluyorsunuz. Antalya'ya uçmaktan çok da farklı değil."
       },
       {
         q: "Çocukla tatil zor olur mu?",
-        a: "Tam tersi — Rixy Kids Town'da çocuklar sabah 9'dan gece 11'e kadar meşgul. Siz de o sürede huzurla dinleniyorsunuz. Hem çocuklar hem ebeveynler tatilden ayrı ayrı keyif alıyor."
+        a: "Tam tersi. Rixy Kids Town sabah 9'dan gece 11'e kadar açık. Çocuklar orada meşgulken siz huzurla dinleniyorsunuz. Birçok aile 'çocuklu tatilde bu kadar rahat edeceğimizi beklemiyorduk' diyor."
       },
       {
         q: "Ultra HSD pahalı değil mi?",
-        a: "Tek seferlik ödeyip her şeyi alıyorsunuz: 16 A La Carte, 26 kaydıraklı aquapark, tüm içecekler, animasyon, çocuk kulübü. Dışarıda aynı deneyimi yaşamak bu fiyatın çok üstüne çıkar."
+        a: "Tek seferlik ödeyip her şeyi alıyorsunuz: 16 restoran, 26 kaydıraklı aquapark, içecekler, çocuk kulübü, animasyon. Bunları tek tek dışarıda alsanız bu fiyatın çok üstüne çıkar."
       },
       {
         q: "Seagate'den farkı ne?",
-        a: "Radamis'in aquaparkı daha büyük (26 aktif kaydırak) ve Rixy Kids Town çok daha kapsamlı — tam bir çocuk şehri. Seagate biraz daha sakin ve 'premium' bir his veriyor. Çocuklu aileler için Radamis kesinlikle daha avantajlı."
+        a: "Radamis'in aquaparkı daha büyük, 26 aktif kaydırak. Ama asıl fark Rixy Kids Town — Seagate'de bu yok. Çocuklu aileler için Radamis daha avantajlı. Seagate biraz daha sakin, swim-up oda gibi farklı özellikleri var — bütçe ve önceliğe göre ikisini de konuşabiliriz."
       }
     ],
 
@@ -261,7 +261,7 @@ export const HOTELS = [
       "Rixy Kids Club plaj alanında özel etkinlikler"
     ],
 
-    competitorDiff: "Ana Radamis binasına kıyasla denize çok daha yakın konum ve şık cabanalar ön plana çıkıyor. Aqua Mania Jungle Park ve Rixy Kids Town için ana binayı ziyaret etme durumu netleştirilmeli. Seagate'e kıyasla daha modern (2015 sonrası renovasyon) ve deniz manzarası daha güçlü.",
+    competitorDiff: "Ana Radamis binasına kıyasla denize çok daha yakın ve cabanalar daha şık. Plaj odaklı bir tatil isteyenler için belirleyici fark bu. Aqua Mania ve Rixy Kids Town'a erişim durumu rezervasyon sırasında netleştirilmeli. Seagate'e kıyasla daha modern renovasyon ve deniz manzarası öne çıkıyor.",
 
     roomTypes: [
       {
@@ -357,33 +357,33 @@ export const HOTELS = [
     },
 
     salesScript: {
-      opening: "Rixos Radamis Beach Hotel — Kızıldeniz'e adım attığınız anda başlayan bir tatil. Denize sıfır konumuyla odadan çıkar çıkmaz plaj, şık cabanalar ve Ultra HSD konfort.",
+      opening: "Sabah uyandığınızda perde açılıyor, Kızıldeniz tam karşınızda. Beach Hotel'de deniz her an görüş alanınızda — odadan çıkar çıkmaz plaj, özel cabanalar ve Ultra HSD konfor.",
       keyPoints: [
-        "Tüm odalar Beach Side — denize karşı balkon veya teras",
-        "Özel cabanalar ile premium plaj deneyimi",
-        "11 A La Carte restoran — farklı mutfaklar",
+        "Tüm odalar Beach Side — her balkon veya terasta deniz var",
+        "Özel cabanalar: plajda kendinize ait bir köşe",
+        "11 A La Carte restoran — her akşam farklı bir seçenek",
         "Rixy Kids Club gece 11'e kadar çocuklara özel etkinlik",
-        "Ultra HSD kapsamında tüm yiyecek-içecek dahil"
+        "Ultra HSD kapsamında tüm yiyecek-içecek dahil, ekstra hesap yok"
       ],
-      closing: "Tarihlerinizi paylaşın, size özel fiyat teklifi hazırlayalım. Hangi tarihler uygun?"
+      closing: "Hangi tarihler düşünüyorsunuz? Kaç kişisiniz? Hemen bakayım."
     },
 
-    honeymoonSalesScript: "Denize bakan odanızda romantik Kızıldeniz sabahı, özel cabanada iki kişilik gün batımı keyfi, akşam T-Bone veya Salt'ta gurme yemek. Beach Hotel balayı için bambaşka bir his veriyor — deniz her an yanınızda.",
+    honeymoonSalesScript: "Denize bakan odanızda Kızıldeniz'le başlayan bir sabah, özel cabanada iki kişilik sessiz bir öğleden sonra, akşam T-Bone'da ya da Salt'ta masa. Beach Hotel çiftler için farklı bir his veriyor — deniz sürekli orada, yanınızda.",
 
-    familySalesScript: "Odadan çıkar çıkmaz plaj! Çocuklar Rixy Kids Club'da plaj etkinliklerinde, siz cabana'nızda huzurla dinleniyorsunuz. Akşam 11 farklı A La Carte arasından seçim yapıyorsunuz. Denize sıfır aile tatilinin en doğal hali.",
+    familySalesScript: "Odadan çıkar çıkmaz plaj — çocuklar zaten oraya koşuyor. Rixy Kids Club plajda ayrı etkinlikler düzenliyor, siz cabana'nızda huzurla oturuyorsunuz. Akşam 11 A La Carte arasından herkes istediğini seçiyor. Denize sıfır aile tatili böyle olur.",
 
     objections: [
       {
-        q: "Beach Hotel mi, Ana bina mı tercih etmeliyim?",
-        a: "Beach Hotel denize sıfır — sabah uyandığınızda doğruca Kızıldeniz. Ana bina ise aquaparka ve Rixy Kids Town'a daha yakın. Önceliğiniz deniz mi yoksa aquapark & çocuk aktivitesi mi?"
+        q: "Beach Hotel mi, ana bina mı tercih etmeliyim?",
+        a: "Beach Hotel'de sabah uyandığınızda deniz tam önünüzde — bu çok farklı bir his. Ana binada ise aquapark ve Rixy Kids Town daha yakın. Önceliğiniz plaj mı, yoksa aquapark ve çocuk aktivitesi mi — buna göre birlikte karar verelim."
       },
       {
         q: "Aquapark var mı?",
-        a: "Beach Hotel bölümünde müstakil aquapark bilgisi belgede geçmiyor. Ana binanın Aqua Mania Jungle Park'ına erişim konusunu rezervasyon sırasında birlikte netleştirebiliriz."
+        a: "Beach Hotel bölümünde müstakil aquapark bilgisi belgede geçmiyor. Ana binanın Aqua Mania Jungle Park'ına erişim konusunu rezervasyon öncesi birlikte netleştirebiliriz."
       },
       {
         q: "Ultra HSD tam olarak ne içeriyor?",
-        a: "Tüm öğünler, tüm yerel ve yabancı içecekler, animasyon programları ve aktiviteler dahil. Yalnızca Teppanyaki gibi özel şov restoranları ve spa ekstra ücretlidir."
+        a: "Tüm öğünler, içecekler, animasyon ve aktiviteler dahil. Teppanyaki gibi şov restoranları ile spa ekstra ücretli — bunların dışında her şey kapsam içinde."
       }
     ],
 
@@ -432,7 +432,7 @@ export const HOTELS = [
       "Exclusive Sports Club — deniz kıyısında ücretsiz grup dersleri"
     ],
 
-    competitorDiff: "Radamis aquaparkına kıyasla daha sakin (23 kaydırak), ancak Lazy River, dönme dolap, çarpışan araba gibi ekstra kuru eğlence özellikleri var. Swim Up oda seçeneği Radamis'te yok. Swissotel'e kıyasla tesis alanı çok daha geniş ve Premium HSD kapsamı daha zengin.",
+    competitorDiff: "Radamis'e kıyasla daha sakin bir tempo, swim-up oda seçeneği ve Lazy River ile kuru eğlence parkı var — Radamis'te bunlar yok. Çocuklu aileler için Radamis'in Rixy Kids Town avantajı büyük; ama Seagate'i premium hisli, biraz daha sakin bir ortam arayanlar tercih ediyor. Swissotel'e göre çok daha geniş tesis ve daha zengin Premium HSD kapsamı.",
 
     roomTypes: [
       {
@@ -606,37 +606,37 @@ export const HOTELS = [
     },
 
     salesScript: {
-      opening: "Rixos Premium Seagate — 23 kaydıraklı Aquaventure Park ayrıca ücret ödemeden dahil, Swim Up odanın terasından havuza adım atıyorsunuz, 12 A La Carte restoran sizi bekliyor.",
+      opening: "Seagate biraz farklı bir his veriyor. Aynı Rixos kalitesi ama tempo biraz daha sakin, oda seçenekleri biraz daha kişisel. Swim Up oda seçerseniz sabah terastan havuza giriş yapıyorsunuz. Aquaventure Park dahil, 12 A La Carte restoran hazır.",
       keyPoints: [
-        "Aquaventure Park dahil — lazy river, dönme dolap, çarpışan araba ile gerçek bir eğlence parkı",
-        "Swim Up oda: terasta oturur, havuza atlarsınız",
-        "Superior Villa 360 m²: özel havuz + uşak hizmeti",
-        "Exclusive Sports Club deniz kenarında yoga, crossfit, aqua zumba",
-        "12 A La Carte + 2 açık büfe"
+        "Swim Up oda: terasta kahvaltı, sonra doğrudan havuza — başka bir his",
+        "Aquaventure Park dahil: lazy river, dönme dolap, çarpışan araba, 23 kaydırak",
+        "Exclusive Sports Club: deniz kıyısında yoga, crossfit, aqua zumba ücretsiz",
+        "Superior Villa 360 m²: özel havuz, bahçe, kişisel uşak — 8 kişiye kadar",
+        "12 A La Carte + 7/24 açık büfe"
       ],
-      closing: "Tarihlerinizi ve tercih ettiğiniz oda tipini paylaşın, hemen fiyat hazırlayalım."
+      closing: "Swim Up mu, villa mı, yoksa aile odası mı düşünüyorsunuz? Tarihlerinizi paylaşın, hemen bakalım."
     },
 
-    honeymoonSalesScript: "Swim Up oda seçin — terastan havuza sabah kahvaltısı mümkün. Anjana Spa'da Moroccan Bath ve çift masajı, akşam Epicure'de Modern Fransız menü. Gece Rixos Arena'da Broadway şovları. Seagate'de balayı başka hissettiriyor.",
+    honeymoonSalesScript: "Swim Up odada sabah: teras kapısını açıyorsunuz, havuz tam önünüzde. Kahvaltıyı terastan yapıp suya atlıyorsunuz. Anjana Spa'da Moroccan Bath ve çift masajı, akşam Epicure'de Modern Fransız menü. Gece Rixos Arena'da Broadway şovları. Seagate'te balayı gerçekten başka hissettiriyor.",
 
-    familySalesScript: "23 kaydıraklı Aquaventure Park, Lazy River, dönme dolap ve çarpışan arabalar — çocuklar oradan hiç çıkmak istemez. Rixy Kids Club sabah 9'dan gece 11'e kadar açık. Family Room Aqua'da aquaparka adım atma mesafesi. 12 A La Carte ile akşam herkese uygun seçenek var.",
+    familySalesScript: "Aquaventure Park'ta 23 kaydırak, Lazy River, dönme dolap ve çarpışan arabalar var — çocuklar oradan çıkmak istemez. Rixy Kids Club sabahtan gece 11'e açık. Family Room Aqua seçerseniz aquaparka adım atma mesafesinde oluyorsunuz. 12 A La Carte ile her akşam herkes istediğini buluyor.",
 
     objections: [
       {
-        q: "Aquaventure Park dahil mi, ayrıca ücret ödüyor muyuz?",
-        a: "Tamamen dahil! Rixos misafirlerine sınırsız erişim Ultra HSD kapsamında. 23 kaydırak, lazy river, kuru eğlence parkı, dönme dolap, çarpışan araba — hiçbiri için ekstra ücret ödemiyorsunuz."
+        q: "Aquaventure Park dahil mi?",
+        a: "Evet, tamamen dahil. Lazy River, kuru eğlence parkı, dönme dolap, çarpışan araba, 23 kaydırak — hepsi Ultra HSD kapsamında, ayrıca ücret ödemiyorsunuz."
       },
       {
         q: "Swim Up oda nedir tam olarak?",
-        a: "Zemin katta, terasta oturduğunuzda doğrudan özel havuza girebildiğiniz oda. Sabah kahvaltısını terastan yapıp havuza atlayabilirsiniz. Deniz ve havuz manzarası da var."
+        a: "Zemin katta, terastan direkt havuza girebildiğiniz oda. Sabah kahvaltısını terastan yapıp havuza atlayabiliyorsunuz. Deniz ve havuz manzarası da var."
       },
       {
         q: "Radamis ile Seagate arasında hangisi daha iyi?",
-        a: "Seagate biraz daha premium hisli ve sakin. Swim Up oda, Lazy River ve kuru eğlence parkı Seagate'te var. Radamis'in ise Rixy Kids Town avantajı çok büyük — tematik çocuk şehri. Bütçe ve önceliğinize göre ikisini de değerlendirebiliriz."
+        a: "Seagate daha sakin ve premium hisli — swim-up oda, lazy river, kuru eğlence parkı burada var. Radamis'in Rixy Kids Town'u ise tematik çocuk aktivitelerinde çok daha kapsamlı. Çocuk aktivitesi önceliğinizse Radamis, biraz daha sakin ve swim-up istiyorsanız Seagate daha uygun."
       },
       {
         q: "Villa kaç kişiyi alıyor?",
-        a: "Superior Villa 360 m²'de 8 yetişkin + 2 çocuk konaklar. Özel bahçe, yüzme havuzu ve kişisel uşak hizmeti dahil. Büyük aile grupları için mükemmel."
+        a: "Superior Villa 360 m², 8 yetişkin + 2 çocuğa kadar. Özel bahçe, yüzme havuzu ve kişisel uşak hizmeti dahil. Büyük aile grupları veya özel kutlamalar için ideal."
       }
     ],
 
@@ -686,7 +686,7 @@ export const HOTELS = [
       "6 farklı A La Carte restoran"
     ],
 
-    competitorDiff: "Rixos markalarından farklı olarak Swissôtel konsepti daha butik ve prestijli bir his veriyor. Adults Only bölümüyle balayı ve çift tatili konusunda Rixos'tan ayrışıyor. Aquapark Rixos'lara kıyasla daha küçük (10 kaydırak) ama Lazy River ve dalgalar havuzu mevcut. Naama Bay merkezine en yakın seçenek.",
+    competitorDiff: "Rixos markalarına kıyasla Swissôtel daha butik ve şehirli bir his veriyor. Adults Only bölümü balayı ve çift tatilinde gerçek bir ayrışma noktası — Rixos'ta buna yakın bir konsept yok. Aquapark 10 kaydırakla daha küçük ama Lazy River ve dalgalar havuzu mevcut. Naama Bay'a en yakın seçenek olması şehirde zaman geçirmek isteyenler için avantaj.",
 
     roomTypes: [
       {
@@ -839,37 +839,37 @@ export const HOTELS = [
     },
 
     salesScript: {
-      opening: "Swissotel Sharm El Sheikh — dünyanın tek Ultra HSD Swissôtel'i, 2024'te kapılarını açtı. Naama Bay'a 1 km, hem Adults Only hem aile bölümüyle herkese uygun ama herkesin kendi dünyasında keyif yaptığı bir tesis.",
+      opening: "2024'te açıldı, her şey sıfırdan yeni. Dünyanın tek Ultra HSD Swissôtel'i — Rixos'tan farklı bir marka hissi arayanlar için güçlü bir seçenek. Adults Only bölümü ve aile bölümü aynı tesiste ama birbirinden tamamen ayrı.",
       keyPoints: [
-        "2024 açılışı — her şey sıfırdan yeni",
-        "Dünyanın tek Ultra HSD Swissôtel — prestijli marka farkı",
-        "Adults Only bölümü 16+ yaş için tamamen sessiz ve zarif",
-        "Naama Bay'a 1 km — şehir gezisi kolay",
-        "Swissôtel global standardı: Accor Hotels bünyesinde"
+        "2024 açılışı: odalar, ekipman, her şey sıfır",
+        "Adults Only bölümü 16+ — çocuksuz, sakin, zarif",
+        "Naama Bay'a 1 km: şehirde yemek veya alışveriş isteyenler için kolay erişim",
+        "Swissôtel: Accor Hotels bünyesinde global bir zincir — standartlar belli",
+        "Sky Lounge'dan Şarm panoraması — gün batımında başka bir his"
       ],
-      closing: "Adults Only mu, aile bölümü mü istediğinizi belirtin, uygun oda ve teklifi hemen hazırlayalım."
+      closing: "Adults Only bölümü mü yoksa aile bölümü mü düşünüyorsunuz? Tarihlerinizi paylaşın, uygun odayı ve teklifi hazırlayalım."
     },
 
-    honeymoonSalesScript: "2024'te açılan taze bir tesiste balayı yapın. Adults Only bölümünde 55–120 m² arası süitler, Tipsy Bar'da gün batımı kokteyliniz, Purovel Spa'da çift masajı ve Sky Lounge'da Şarm panoraması. Swissôtel kalitesi her detayda hissediliyor — balayı bunun için var.",
+    honeymoonSalesScript: "2024'te açılan taze bir tesiste balayı. Adults Only bölümünde etrafınızda sadece yetişkinler var — gerçek anlamda sakin. 55 ile 120 m² arasında süit seçenekleri, Purovel Spa'da çift masajı, Tipsy Bar'da gün batımı kokteyliniz, Sky Lounge'da Şarm'ı tepeden izlemek. Swissôtel kalitesi her detayda kendini belli ediyor.",
 
-    familySalesScript: "Swissotel Aqua bölümünde bağlantılı aile odaları, 10 kaydıraklı aquapark ve 4–12 yaş çocuk kulübü gece 11'e kadar açık. Aquaparka en yakın konumda Family Room ile çocuklar için her şey hazır. The Quarter'da 24 saat açık büfe ile hiç aç kalınmıyor.",
+    familySalesScript: "Aqua bölümünde aile odaları aquaparka adım atma mesafesinde. 10 kaydırak, dalgalar havuzu ve Lazy River var. Çocuk kulübü gece 11'e kadar 4–12 yaş için açık. The Quarter'da 24 saat açık büfe — aç kalan olmuyor. Naama Bay'a 1 km olduğu için akşam şehire çıkma seçeneği de var.",
 
     objections: [
       {
         q: "Swissôtel mi, Rixos mu tercih etmeliyim?",
-        a: "İkisi de Ultra HSD ama Swissôtel daha butik ve yeni (2024). Adults Only bölümüyle çiftler için sakinlik çok daha ön planda. Rixos daha büyük tesis, daha fazla aktivite çeşitliliği sunuyor. Sakinlik mi yoksa büyük tesis enerjisi mi istersiniz?"
+        a: "İkisi de Ultra HSD ama his farklı. Swissôtel daha butik ve yeni, Adults Only bölümüyle çiftler için sakinlik çok daha ön planda. Rixos daha büyük tesis, daha fazla aktivite. Sakinlik ve zarafet önceliğinizse Swissôtel, büyük resort enerjisi istiyorsanız Rixos."
       },
       {
         q: "Adults Only bölümü gerçekten çocuksuz mu?",
-        a: "Evet, yalnızca 16 yaş ve üzeri misafirler bu bölüme kabul ediliyor. Spa ve fitness alanları da 16+ yaş için. Çocuklu aileler Aqua bölümüne yönlendiriliyor."
+        a: "Evet, yalnızca 16 yaş ve üzeri bu bölüme girebiliyor. Spa ve fitness da 16+. Çocuklu aileler Aqua bölümüne yönlendiriliyor — tamamen ayrı."
       },
       {
-        q: "2024 açılışı güvenilir mi, yeterince oturmuş mu?",
-        a: "Swissôtel dünya genelinde çok köklü bir zincir — Accor Hotels bünyesinde. 2024 açılışı tüm ekipman ve odaların sıfırdan yeni olduğu anlamına geliyor. Bu bir avantaj."
+        q: "2024 açılışı güvenilir mi, oturmuş mu?",
+        a: "Swissôtel dünya genelinde çok köklü bir zincir, Accor bünyesinde. 2024 açılışı aslında bir avantaj — oda ve ekipman sıfırdan yeni. Marka standardı zaten belirli."
       },
       {
         q: "Aquapark Rixos'lardan küçük mü?",
-        a: "Evet, 10 kaydırak var ama Lazy River ve dalgalar havuzu da mevcut. Çok büyük aquapark önceliğinizse Rixos Seagate (23 kaydırak) veya Radamis (26 kaydırak) daha uygun olabilir."
+        a: "Evet, 10 kaydırak var. Ama Lazy River ve dalgalar havuzu da mevcut. Çok büyük aquapark önceliğinizse Seagate (23) veya Radamis (26) daha uygun. Aquapark ikincil öncelikteyse Swissôtel'in diğer avantajları daha belirleyici."
       }
     ],
 
@@ -917,7 +917,7 @@ export const HOTELS = [
       "Havalimanına sadece 7 km"
     ],
 
-    competitorDiff: "Şarm El Şeyh tesisleriyle kıyaslandığında farklı bir destinasyon (Hurghada). Oda boyutları tüm rakiplerden büyük — minimum 130 m²'den başlıyor. Rixos Seagate veya Radamis gibi kalabalık bir resort değil; daha sakin, daha özel ve villaların ağırlıklı olduğu bir konsept.",
+    competitorDiff: "Şarm tesisleriyle aynı ligde değerlendirmemek lazım — farklı bir destinasyon ve farklı bir konsept. Oda büyüklükleri tüm rakiplerden belirgin şekilde büyük: minimum 130 m²'den başlıyor. Magawish kalabalık bir resort değil — daha sakin, daha özel, villalar ağırlıklı. Alan ve mahremiyet önceliği olan üst segment müşteri için doğal tercih.",
 
     roomTypes: [
       {
@@ -1049,37 +1049,37 @@ export const HOTELS = [
     },
 
     salesScript: {
-      opening: "Rixos Premium Magawish — Hurghada'nın 1 km özel plajında en küçük odası 130 m²'den başlayan, sadece süit ve villa konseptiyle çalışan prestijli bir resort. 30 ısıtmalı havuz, 7 A La Carte restoran ve Ultra HSD.",
+      opening: "Magawish'te standart oda yok. En küçük oda 130 m²'den başlıyor — her şey süit ya da villa. Hurghada'da 1 km özel plaj, 30 ısıtmalı havuz ve Ultra HSD. Alan ve mahremiyet önceliği olanlar için bambaşka bir his.",
       keyPoints: [
-        "Standart oda yok — en küçük oda 130 m²",
-        "Royal Villa 944 m²: butler, özel havuz, bahçe, ev sineması",
-        "1 km özel plaj ve 30 ısıtmalı havuz",
+        "En küçük oda 130 m² — süit altı bir seçenek yok",
+        "Royal Villa 944 m²: özel bahçe, özel havuz, kişisel butler, ev sineması",
+        "1 km özel plaj, 30 ısıtmalı havuz — kış da dahil kullanılabilir",
         "Lagoon Swim Up Suite: terastan direkt havuza",
         "Havalimanına 7 km — kısa transfer"
       ],
-      closing: "Kaç kişilik ve hangi tür konaklamayı düşünüyorsunuz? Süit mi villa mı? Tarihlerinizi paylaşın, hemen teklif çıkaralım."
+      closing: "Süit mi, villa mı düşünüyorsunuz? Kaç kişisiniz? Tarihlerinizi paylaşın, hemen bir teklif çıkarayım."
     },
 
-    honeymoonSalesScript: "Royal Villa'da kendi bahçeniz ve özel havuzunuz var, kişisel butler her isteğinizi yerine getiriyor — 944 m²'de sadece ikinizsiniz. Anjana Spa'da hamam ritüeli ve çift masajı, Beach Bar'da Kızıldeniz gün batımı kokteyliniz. Balayı böyle olmalı.",
+    honeymoonSalesScript: "Royal Villa'da dışarısı kapalı: özel bahçeniz, özel havuzunuz, kişisel butler'ınız var. 944 m²'de sadece ikinizsiniz. Anjana Spa'da hamam ritüeli ve çift masajı, Beach Bar'da Kızıldeniz'e karşı gün batımı kokteyliniz. Bu kadar mahremiyet başka bir yerde zor.",
 
-    familySalesScript: "Executive Family Suite (170 m²) veya Executive Pool Villa (240 m²) ile tüm aile rahat eder. Rixy Kids Club gece 11'e kadar 4–12 yaş çocuklara özel, aileler The Mangal'da açık havada BBQ keyfinde. 1 km plajda şezlonglar ve 30 ısıtmalı havuz her mevsim kullanılabilir.",
+    familySalesScript: "Executive Family Suite 170 m², Executive Pool Villa ise 240 m² — geniş aileler için nefes alacak alan var. Rixy Kids Club gece 11'e kadar 4–12 yaş için açık. The Mangal'da açık hava BBQ, 1 km plajda şezlonglar ve 30 ısıtmalı havuz yıl boyunca aktif. Herkes kendi köşesini buluyor.",
 
     objections: [
       {
-        q: "Neden Hurghada, Sharm El Sheikh neden değil?",
-        a: "Hurghada şehir merkezine daha yakın — alışveriş ve çıkış daha kolay. Magawish tamamen kendi içinde kapalı bir resort, dışarıya çıkmanıza gerek yok. Sharm daha tur odaklı, Hurghada biraz daha şehirli bir atmosfer."
+        q: "Neden Hurghada, Şarm El Şeyh neden değil?",
+        a: "Hurghada şehir merkezine daha yakın — alışveriş ve dışarı çıkış daha kolay. Ama Magawish kendi içinde kapalı bir dünya, dışarıya çıkmanıza gerek kalmıyor. Şarm daha tur odaklı, Hurghada biraz daha şehirle iç içe bir atmosfer."
       },
       {
-        q: "130 m² en küçük oda çok abartı değil mi?",
-        a: "Bu tesiste standart oda yok — her şey süit veya villa. Rixos Premium Magawish zaten üst segment için tasarlanmış. Mahremiyet ve alan önceliğinizse bu kesinlikle doğru tercih."
+        q: "130 m² en küçük oda çok abartılı değil mi?",
+        a: "Bu tesisin konsepti bu — standart oda yok, her şey süit veya villa. Magawish zaten alan ve mahremiyet için tercih ediliyor. Büyük oda istemiyorsanız Şarm'daki Rixos seçenekleri daha uygun olabilir."
       },
       {
         q: "Aquapark yok mu?",
-        a: "PDF'te müstakil aquapark bilgisi geçmiyor. Ama 30 ısıtmalı havuz var. Büyük aquapark önceliğinizse Seagate (23 kaydırak) veya Radamis (26 kaydırak) daha uygun olabilir."
+        a: "Belgede müstakil aquapark geçmiyor, ama 30 ısıtmalı havuz var. Büyük aquapark önceliğinizse Seagate (23 kaydırak) veya Radamis (26 kaydırak) daha uygun olur."
       },
       {
-        q: "Royal Villa için fiyat çok yüksek olmaz mı?",
-        a: "944 m², özel bahçe, özel havuz, 4 yatak odası, butler ve ev sineması — 8 yetişkin + 2 çocuk için bölününce kişi başı çok makul çıkıyor. Büyük aile grupları veya özel kutlamalar için ideal."
+        q: "Royal Villa çok pahalı olmaz mı?",
+        a: "944 m², 4 yatak odası, özel havuz, bahçe, butler ve ev sineması — 8 yetişkin + 2 çocuk bölününce kişi başı oldukça makul çıkıyor. Büyük aile grupları veya özel kutlamalar için bu fiyatın karşılığı fazlasıyla var."
       }
     ],
 
