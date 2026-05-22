@@ -1173,6 +1173,119 @@ export const HOTELS = [
       flightUpdate: "Uçuş bilgilerinizde değişiklik olduysa lütfen yazın — transfer ve giriş planını buna göre güncelleyelim.\n\nYeni sefer saatiniz netleşince haberdar edin."
     },
 
-    lastUpdated: "2026-05-22"
-  }
-];
+   lastUpdated: "2026-05-22"
+  },
+  {
+    id: 6,
+    name: "Rixos Sharm El Sheikh",
+    aliases: ["Rixos Sharm", "Sharm Adult Only", "18+ Rixos", "Rixos 18+"],
+    region: "Şarm El Şeyh",
+    stars: 5,
+    concept: "Ultra Her Şey Dahil — Adults Only 18+",
+    image: "/images/rixos-sharm.jpg",
+    badges: ["Adults Only 18+", "Ultra HSD", "Swim-Up Suite", "Özel Plaj"],
+    targetCustomer: "18+ yetişkinler, çiftler, sessizlik ve lüks arayanlar, DJ ve gece hayatı isteyenler, balayı çiftleri",
+    adultOnly: { is: true, ageLimit: 18, note: "18 yaş altı misafir kabul edilmemektedir. Spa ve spor salonu 16 yaş üzeri içindir." },
+
+    strengths: [
+      "Şarm'ın tek 18+ adults only Rixos oteli — gerçek huzur garantisi",
+      "153.000 m² dev kompleks, 330 m özel plaj, 147 m iskele",
+      "7 yüzme havuzu",
+      "Swim-Up Suite — terastan özel havuza direkt geçiş (110 m²)",
+      "8 A'la Carte restoran + 9 bar & lounge — tümü Ultra HSD dahil",
+      "X Lounge & Sunset Lounge — ünlü DJ performansları",
+      "Anjana Spa — Türk hamamı, aromaterapi, Bali & Thai masajı",
+      "Gece partileri ve sabahlara kadar eğlence",
+    ],
+
+    competitorDiff: [
+      "Şarm'daki tek 18+ adults only Rixos — çocuklu otellerle karşılaştırılamaz",
+      "Swim-Up Suite sadece bu otelde mevcut",
+      "8 A'la Carte restoran Ultra HSD dahil — çoğu otelde ek ücretli",
+      "Gece kulübü kalitesinde DJ ve canlı performanslar",
+    ],
+
+    roomTypes: [
+      { name: "Superior Oda", sizeSqm: 37, view: "Bahçe veya havuz manzaralı", maxCapacity: "3 Yetişkin", features: ["King veya twin yatak", "Balkon/teras", "Mini bar", "32\" LCD TV", "Wi-Fi", "Çay-kahve seti"] },
+      { name: "Deluxe Oda", sizeSqm: 50, view: "Bahçe veya havuz manzaralı", maxCapacity: "3 Yetişkin", features: ["King veya twin yatak", "Balkon/teras", "Mini bar", "Wi-Fi"] },
+      { name: "Aile Odası", sizeSqm: 58, view: "Bahçe manzaralı", maxCapacity: "4 Yetişkin", features: ["2 yatak odalı, ara kapılı", "1 king size + 2 tek kişilik yatak", "Balkon/teras"] },
+      { name: "Junior Suite", sizeSqm: 74, view: "Havuz veya bahçe manzaralı", maxCapacity: "3 Yetişkin", features: ["King size yatak", "Geniş oturma alanı", "40\" döner LCD TV", "Çift lavabo, küvet, duş kabini", "Büyük balkon"] },
+      { name: "Senior Suite", sizeSqm: 74, view: "Havuz veya bahçe manzaralı", maxCapacity: "3 Yetişkin", features: ["King size yatak", "Ayrı salon", "Küvetli banyo", "Balkon/teras"] },
+      { name: "Swim-Up Suite", sizeSqm: 110, view: "Deniz manzaralı", maxCapacity: "3 Yetişkin", features: ["Terastan özel havuza direkt geçiş", "Deniz manzaralı geniş salon", "2 lavabo, küvet, duş", "Executive Lounge erişimi dahil"] },
+      { name: "Diplomatic Suite", sizeSqm: 148, view: "Havuz ve bahçe manzaralı", maxCapacity: "3 Yetişkin", features: ["Modern dekorasyon", "Geniş salon", "2 büyük banyo (küvet+duş)", "Geniş teras"] },
+    ],
+
+    restaurants: [
+      { name: "The Palm Restaurant", cuisine: "Uluslararası Açık Büfe", hours: "07:00–10:00 / 12:30–14:30 / 18:30–21:30 / 23:00–02:00", extraCharge: false },
+      { name: "Gusto", cuisine: "İtalyan", hours: "18:30–22:00", extraCharge: false },
+      { name: "Asian", cuisine: "Asya Mutfağı", hours: "18:30–22:00", extraCharge: false },
+      { name: "Salt", cuisine: "Deniz Ürünleri", hours: "Snacks 11:00–17:00 / Akşam 18:30–22:00", extraCharge: false },
+      { name: "Taj Mahal", cuisine: "Hint Mutfağı", hours: "18:30–22:00", extraCharge: false },
+      { name: "Lalezar", cuisine: "Türk Mutfağı", hours: "Kahvaltı 07:00–10:00 / Akşam 18:30–22:00", extraCharge: false },
+      { name: "La Churrascaria", cuisine: "Brezilya", hours: "18:30–22:00", extraCharge: false },
+      { name: "The Mangal", cuisine: "Barbekü", hours: "18:30–22:00", extraCharge: false },
+      { name: "Sakura", cuisine: "Sushi Bar", hours: "18:30–22:00", extraCharge: false },
+    ],
+
+    aquapark: { has: false, note: "Aquapark bulunmamaktadır. 7 yüzme havuzu mevcuttur." },
+
+    kidsClub: { has: false, note: "18+ adults only oteldir, çocuk kulübü bulunmamaktadır." },
+
+    beach: {
+      hasPrivate: true,
+      type: "Kum & Mercan — 330 m özel plaj, 147 m iskele",
+      sunbeds: "Şezlong ve şemsiye dahil",
+      snorkeling: true,
+      waterSportsNote: "İskele üzerinden su sporları ve dalış organizasyonu",
+    },
+
+    transfer: {
+      airport: "SSH — Şarm El Şeyh Havalimanı",
+      duration: "8 km — yaklaşık 10–15 dk",
+      approxPrice: "15–25 USD",
+      options: ["VIP transfer", "Minibüs", "Özel araç"],
+      note: "3 gece ve üzeri konaklamalarda transfer dahildir.",
+    },
+
+    swimUpRooms: { has: true, note: "Swim-Up Suite — 110 m², terastan özel havuza direkt geçiş" },
+
+    salesScript: {
+      opening: "Şarm'da hem lüks hem huzur istiyorsanız, Rixos Sharm El Sheikh tam size göre. 18+ konsepti sayesinde çocuk sesi yok, sadece siz, sessizlik ve Kızıldeniz var.",
+      keyPoints: [
+        "18+ adults only — gerçek huzur",
+        "Swim-Up Suite — uyandığınız anda havuz başında",
+        "8 A'la Carte restoran Ultra HSD dahil",
+        "X Lounge'da DJ performansları — gece hayatı Rixos kalitesinde",
+        "330 m özel plaj ve snorkeling",
+        "Anjana Spa — Türk hamamı ve masaj",
+      ],
+      closing: "Şarm'da bu kalitede adults only bir otel bulmak zor. Tarihinizi söyleyin, hemen kontrol edeyim.",
+    },
+
+    honeymoonSalesScript: "Her şey var ama çocuk sesi yok — balayı için mükemmel. Swim-Up Suite'te sabah kahvenizi havuz kenarında içerken, gün batımını 330 metrelik özel plajdan izliyorsunuz. Akşam 8 farklı A'la Carte restorandan birinde romantik yemek, gece X Lounge'da DJ eşliğinde dans. Bu bir tatil değil, bir his.",
+
+    familySalesScript: "Bu otel 18+ adults only olduğundan çocuklu aileler için uygun değil. Çocuklu misafirler için Rixos Premium Magawish'i öneririm — Rixy Kids Club ve geniş suite seçenekleriyle mükemmel bir aile oteli.",
+
+    objections: [
+      { q: "Çok pahalı", a: "8 A'la Carte restoran, Swim-Up Suite, Anjana Spa, gece partileri — hepsi Ultra HSD dahil. Başka bir otelde bunları ayrı ayrı ödediğinizde fark çok daha büyük çıkıyor." },
+      { q: "Aquapark yok mu?", a: "Aquapark yok ama 7 havuz, 330 m özel plaj ve snorkeling mevcut. Bu otel aquapark yerine sessizlik ve lüks sunan adults only bir konsept — hedef kitle zaten farklı." },
+      { q: "Aile için uygun mu?", a: "18+ adults only olduğu için çocuklu aileler kabul edilmiyor. Aile tatili için Rixos Premium Magawish çok daha uygun — Kids Club ve geniş suitler mevcut." },
+    ],
+
+    importantNotes: [
+      "18 yaş altı misafir kabul edilmemektedir",
+      "Check-in: 14:00 / Check-out: 12:00",
+      "Tüm odalar ve süitlerde sigara içilmez",
+      "Spa ve spor salonları 16 yaş üzeri içindir",
+      "Havalimanına 8 km, Naama Bay'e 17 km",
+      "21 bina — asansör bulunmamaktadır",
+    ],
+
+    whatsappTemplates: {
+      general: `🏨 *Rixos Sharm El Sheikh — Adults Only 18+*\n\n✨ Ultra Her Şey Dahil · 5 Yıldız Deluxe\n🔞 18+ Adults Only — Gerçek huzur garantisi\n\n✅ 330 m özel plaj\n✅ Swim-Up Suite seçeneği\n✅ 8 A'la Carte restoran (tümü dahil)\n✅ X Lounge — DJ performansları\n✅ Anjana Spa\n\nTarih ve kişi sayınızı paylaşın, fiyat bilgisi alayım 📩`,
+      honeymoon: `💑 *Balayı — Rixos Sharm El Sheikh*\n\n"Her şey var ama çocuk sesi yok."\n\n🏊 Swim-Up Suite — terastan özel havuza direkt geçiş\n🍽 8 A'la Carte restoran — romantik akşam yemekleri\n🌅 330 m özel plaj — gün batımı keyfi\n🎵 X Lounge — DJ eşliğinde geceleri\n💆 Anjana Spa — çift masajı\n\nBalayı tarihlerinizi paylaşın 💍`,
+      family: `👨‍👩‍👧 *Aile Tatili — Önemli Bilgi*\n\nRixos Sharm El Sheikh 18+ Adults Only oteli olduğundan çocuklu aileler için uygun değildir.\n\nAileler için önerimiz:\n🏨 *Rixos Premium Magawish*\n✅ Rixy Kids Club (4-12 yaş)\n✅ Geniş suite ve villa seçenekleri\n✅ Ultra HSD konsept\n\nDetaylı bilgi için beni arayın 📞`,
+      priceRequest: `💰 *Fiyat Bilgisi — Rixos Sharm El Sheikh*\n\n📅 Tarih:\n👥 Kişi sayısı:\n🛏 Oda tipi:\n\nBilgileri paylaşın, en güncel fiyatı hemen ileteyim ✅`,
+      transfer: `🚐 *Transfer — Rixos Sharm El Sheikh*\n\nHavalimanı: SSH · Mesafe: 8 km · Süre: ~10-15 dk\n\n✈️ Uçuş no:\n🕐 İniş saati:\n👥 Kişi sayısı:\n\n3 gece ve üzeri konaklamada transfer dahil 🎁`,
+    },
+  },
